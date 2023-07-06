@@ -1,15 +1,14 @@
 # Weather
+```sh
+The application was created for the purpose of learning from lessons https://www.youtube.com/@CosyFrontendNastia
+```
+```sh
+The application allows you to find out what the weather is like in any city in the world.
+```
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
+```sh
+The design was not created by me, the templates of the author of the lessons were used.
+```
 ## Project Setup
 
 ```sh
@@ -26,4 +25,10 @@ npm run dev
 
 ```sh
 npm run build
+```
+### API 
+```sh
+Register and get an API key at https://openweathermap.org/
+
+At the root of the application, you need to create an .env file in which you need to write VITE_API_KEY=YOUR_API_KEY
 ```
