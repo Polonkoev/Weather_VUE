@@ -1,6 +1,7 @@
 # Weather
 ```sh
-The application was created for the purpose of learning from lessons https://www.youtube.com/@CosyFrontendNastia
+The application was created for the purpose of learning from lessons 
+[CosyFrontendNastia](https://www.youtube.com/@CosyFrontendNastia)
 ```
 ```sh
 The application allows you to find out what the weather is like in any city in the world.
