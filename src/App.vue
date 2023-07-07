@@ -9,7 +9,7 @@ const city = ref("Paris")
 const weatherInfo = ref(null)
 
 function getWeather() {
-  fetch(`${BASE_URL}?q=${city.value}&appid=${apiKey}`).then((response) => response.json()).then((data) => weatherInfo.value = data).then(() => console.log(weatherInfo.value.weather))
+  fetch(`${BASE_URL}?q=${city.value}&units=metric&appid=${apiKey}`).then((response) => response.json()).then((data) => weatherInfo.value = data).then(() => console.log(weatherInfo.value.weather[0].description))
 }
 onMounted(getWeather)
 
@@ -29,11 +29,11 @@ onMounted(getWeather)
                 <div class="city-inner">
                   <input v-model="city" type="text" class="search" @keyup.enter="getWeather">
                 </div>
-                <weatherSummary></weatherSummary>
+                <weatherSummary :weatherInfo="weatherInfo" />
               </div>
             </section>
             <section class="section section-right">
-              <Hightlights></Hightlights>
+              <Hightlights />
             </section>
           </div>
           <div class="sections">
